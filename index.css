@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(hall\ \(10\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(31, 250, 224);
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{  /*check this hover effect on home,about,bedroom*/
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    transform:translative(-50%);
+    text-align: center;
+    color: white;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 20px;
+}
+button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background:transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+
+button:hover{
+    border: none;
+    background-color: rgb(9, 175, 175);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(h\ \(1\).jpg);
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.box{
+    width: 300px;
+    height:500px;
+    margin: 50px;
+    box-shadow: -1px 0 10px  aqua;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+    
+}
+img{
+    width:300px ;
+    height: 300px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+
+.box:hover{
+    transform: translateY(-10px);
+}
